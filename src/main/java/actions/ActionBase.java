@@ -61,7 +61,7 @@ public abstract class ActionBase {
             //パラメータからcommandを取得
             String command = request.getParameter(ForwardConst.CMD.getValue());
 
-            //commandに該当するメソッドを実行する
+            //ommandに該当するメソッドを実行する
             //(例: action=Employee command=show の場合 EmployeeActionクラスのshow()メソッドを実行する)
             commandMethod = this.getClass().getDeclaredMethod(command, new Class[0]);
             commandMethod.invoke(this, new Object[0]); //メソッドに渡す引数はなし
@@ -114,7 +114,7 @@ public abstract class ActionBase {
         response.sendRedirect(redirectUrl);
 
     }
-    
+
     /**
      * CSRF対策 token不正の場合はエラー画面を表示
      * @return true: token有効 false: token不正
