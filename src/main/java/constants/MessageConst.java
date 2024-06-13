@@ -18,10 +18,10 @@ public enum MessageConst {
     I_DELETED("削除が完了しました。"),
     
     // バリデーション
-    E_NONNAME("氏名を入力してください。"),
+    E_NONAME("氏名を入力してください。"),
     E_NOPASSWORD("パスワードを入力してください。"),
     E_NOEMP_CODE("社員番号を入力してください。"),
-    E_EMP_CODE_EXSIST("入力された社員番号は既に存在しています。"),
+    E_EMP_CODE_EXIST("入力された社員番号は既に存在しています。"),
     E_NOTITLE("タイトルを入力してください。"),
     E_NONCONTENT("内容を入力してください。");
     
