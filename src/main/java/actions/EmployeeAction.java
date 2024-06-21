@@ -224,7 +224,7 @@ public class EmployeeAction extends ActionBase {
             if (errors.size() > 0) {
                 putRequestScope(AttributeConst.TOKEN, getTokenId());    //CSRF対策用トークン
                 putRequestScope(AttributeConst.EMPLOYEE, ev);    //入力された従業員情報
-                putRequestScope(AttributeConst.TOKEN, getTokenId());    //エラーのリスト
+                putRequestScope(AttributeConst.ERR, errors);    //エラーのリスト
                 
                 // 編集画面を表示
                 forward(ForwardConst.FW_EMP_EDIT);

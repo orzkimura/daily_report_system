@@ -49,7 +49,7 @@ public class EmployeeValidator {
     
     /**
      * 社員番号の入力チエックを行い、エラーメッセージを返却
-     * @param service Employeeのインスタンス
+     * @param service EmployeeServiceのインスタンス
      * @param code 社員番号
      * @param codeDuplicateCheckFlag 社員番号の重複チチェックを実施するかどうか(実施する:true 実施しない:false)
      * @return エラーメッセージ
